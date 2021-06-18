@@ -1,21 +1,27 @@
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Montserrat', sans-serif;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -28,27 +34,29 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
+    background: #b3d4fc;
+    text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule
  */
 
 hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -62,34 +70,340 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
+    vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
  */
 
 fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
+
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
 textarea {
-  resize: vertical;
+    resize: vertical;
 }
+
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+section {
+    padding: 0px 2rem;
+}
+
+section>* {
+    margin: 0px auto;
+    max-width: 80rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+.desktop-nav {
+    display: none;
+    z-index: 2;
+}
+
+.menu {
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0px 1rem;
+}
+
+.orange-btn {
+    background-color: #ec821a;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+}
+
+.menu-btn {
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+.social-menu {
+    display: block;
+    text-align: right;
+    margin: 1rem;
+}
+
+.social-menu img {
+    max-width: 30px;
+    margin: 0px .3rem;
+}
+
+#hero-section {
+    background-image: url('/img/hero-background-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+
+h2 {
+    margin: 0px;
+    line-height: 1;
+    color: white;
+    font-size: clamp(1rem, 7vw, 5.5rem);
+    font-weight: 100;
+}
+
+.hero-buttons,
+.hero-contact {
+    margin: 4rem 0px;
+}
+
+.hero-buttons .orange-btn {
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.hero-contact {
+    margin-bottom: 0px;
+    padding-bottom: 4rem;
+}
+
+.hero-content {
+    z-index: 2;
+    position: relative;
+}
+
+.hero-contact {
+    margin: 0px;
+    line-height: 1;
+    color: white;
+}
+
+.address {
+    font-size: 1.7rem;
+}
+
+.phone {
+    font-size: 2.2rem;
+}
+
+.hero-food-slider {
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    z-index: 1;
+}
+
+.hero-food {
+    max-width: 50vw;
+}
+
+#info-section {
+    background-color: #222023;
+    padding: 2rem;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+    box-shadow: 0px 0px 1px 2px #222023;
+}
+
+.info-header {
+    color: #9a766a;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.three-col {
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 40%;
+}
+
+.icon-col {
+    width: 20%;
+}
+
+.icon-col img {
+    max-width: 100px;
+}
+
+h3 {
+    color: #ec821a;
+    font-weight: bold;
+}
+
+.hours {
+    color: white;
+}
+
+
+/*
+#gallery-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . ." ". . . . .";
+    padding: 0px;
+}
+
+#gallery-section img {
+    width: 100%;
+    height: auto;
+}
+*/
+
+#gallery-section {
+    background-image: url('/img/food-gallery.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+
+#about-section,
+#buy-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+#about-section .content-block {
+    background-image: url('/img/tree-background.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 45%;
+}
+
+#buy-section .content-block {
+    background-image: url('/img/gift.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content-block {
+    padding: 2rem;
+}
+
+.content-block,
+.image-block {
+    width: 50%;
+    height: 450px;
+}
+
+.image-block {
+    overflow: hidden;
+}
+
+.image-block img {
+    max-width: 120%;
+}
+
+#gift-card-placeholder {
+    max-width: 400px;
+}
+
+#menu-section {
+    background-image: url('/img/menu-tmh-background.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.menu-container {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0px;
+}
+
+h4 {
+    font-size: 2.22rem;
+}
+
+.white {
+    color: white;
+}
+
+.menu-container .orange-btn {
+    margin-bottom: 2rem;
+    min-width: 8rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#footer-section {
+    background-image: url('/img/map-background.png');
+    background-position: center top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.form-popup {
+    background-color: white;
+    width: 40%;
+    box-shadow: 0px 0px 15px black;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: -20%;
+}
+
+.form-popup h4 {
+    margin: 0px;
+    font-weight: bold;
+}
+
+form {
+    margin: 2rem 0px;
+}
+
+input {
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    padding: 3px;
+    margin: .5rem 0px;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -97,8 +411,9 @@ textarea {
 
 .hidden,
 [hidden] {
-  display: none !important;
+    display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -110,17 +425,18 @@ textarea {
  */
 
 .sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
 }
+
 
 /*
  * Extends the .sr-only class to allow the element
@@ -130,22 +446,24 @@ textarea {
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
 }
+
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -161,13 +479,14 @@ textarea {
 
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -176,15 +495,22 @@ textarea {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+    /* Style adjustments for viewports that meet the condition */
+    .desktop-nav {
+        display: inline-block;
+    }
+    .logo {
+        max-width: 200px;
+    }
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -193,71 +519,60 @@ textarea {
    ========================================================================== */
 
 @media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  /*
+    *,
+    *::before,
+    *::after {
+        background: #fff !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]::after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]::after {
+        content: " (" attr(title) ")";
+    }
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /*
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
 }
-

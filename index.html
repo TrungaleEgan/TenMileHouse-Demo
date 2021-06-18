@@ -2,40 +2,153 @@
 <html class="no-js" lang="">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Ten Mile House</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="Ten Mile House">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="tmh-icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <section id="hero-section">
+        <header>
+            <img class="logo" src="img/tmh-logo-white.png" alt="Ten Mile House">
+            <nav class="desktop-nav">
+                <a class="orange-btn menu-btn menu" href="">Menus</a>
+                <a class="menu" href="">Order Online</a>
+                <a class="menu" href="">Reservations</a>
+                <a class="menu" href="">Gifts</a>
+                <a class="menu" href="">Private Dining</a>
+                <a class="menu" href="">Contact</a>
+                <div class="social-menu">
+                    <img src="img/fb-icon.png">
+                    <img src="img/twitter-icon.png">
+                    <img src="img/insta-icon.png">
+                </div>
+            </nav>
+        </header>
+        <div class="hero-content">
+            <h2>Serving thoughtful<br /> comfort food & <br /> good times</h2>
+            <div class="hero-buttons">
+                <a class="orange-btn" href="">Order Delivery</a>
+                <a class="orange-btn" href="">Order Takeout</a>
+                <a class="orange-btn" href="">Book Online</a>
+            </div>
+            <div class="hero-contact">
+                <p class="address">1700 Central Street, Evanston, IL 60201</p>
+                <p class="phone">847.905.0669</p>
+            </div>
+        </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+        <div class="hero-food-slider">
+            <img class="hero-food active" src="img/salmon.png">
+            <img class="hero-food hidden" src="img/pizza.png">
+            <img class="hero-food hidden" src="img/drinks.png">
+        </div>
+    </section>
+    <section id="info-section">
+        <div class="info-header">
+            --- Now Open for Indoor Dining ---
+        </div>
+        <div class="three-col">
+            <div class="col">
+                <h3>Lunch/Brunch</h3>
+                <p class="hours">
+                    <strong>Friday:</strong> 11:30 AM - 9 PM
+                </p>
+                <p class="hours">
+                    <strong>Saturday &amp; Sunday:</strong> 10 AM - 2:30 PM
+                </p>
+            </div>
+            <div class="icon-col">
+                <img src="img/tmh-icon.png">
+            </div>
+            <div class="col">
+                <h3>Dinner</h3>
+                <p class="hours">
+                    <strong>Sunday - Wednesday:</strong> 4 PM - 8 PM
+                </p>
+                <p class="hours">
+                    <strong>Thursday - Saturday:</strong> 4 PM - 9 PM
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--
+    <section id="gallery-section">
+        <img src="/img/sandwich-1.jpg">
+        <img src="/img/tots.jpg">
+        <img src="/img/sandwich-2.jpg">
+        <img src="/img/nachos.jpg">
+        <img src="/img/sandwich-3.jpg">
+        <img src="/img/eggs.jpg">
+        <img src="/img/sandwich-4.jpg">
+        <img src="/img/burrito.jpg">
+        <img src="/img/salad.jpg">
+        <img src="/img/sandwich-5.jpg">
+    </section>
+    -->
+    <section id="gallery-section">
+    </section>
+
+    <section id="about-section">
+        <div class="content-block">
+            <h4>Re-Established 2014</h4>
+            <p>A social hub for the thriving Evanston community, Ten Mile House serves thoughtful comfort food and beverages in a vibrant, welcoming setting. Located in the heart of Evanston’s Central Street district, just steps from Northwestern University’s
+                Ryan Field, Ten Mile House serves an extensive menu featuring wood fired pizza, smoked meats and a diverse selection of comfort food classics and healthy fare.</p>
+        </div>
+        <div class="image-block">
+            <img src="img/exterior-1.jpg">
+        </div>
+    </section>
+    <section id="buy-section">
+        <div class="image-block">
+            <img src="img/exterior-2.jpg"></div>
+        <div class="content-block">
+            <img id="gift-card-placeholder" src="img/gift-certificates-placeholder.png">
+        </div>
+    </section>
+    <section id="menu-section">
+        <div class="menu-container">
+            <h4 class="white">View Our Menus</h4>
+            <a href="" class="orange-btn">Lunch/Brunch</a>
+            <a href="" class="orange-btn">Dinner</a>
+            <a href="" class="orange-btn">Kids</a>
+        </div>
+    </section>
+    <section id="footer-section">
+        <div class="form-popup">
+            <h4 class="form-header">Contact Us</h4>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="Name*"><br>
+                <input type="text" id="email" name="email" placeholder="E-mail*"><br>
+                <input type="textarea" id="message" name="message" placeholder="Message*"><br>
+            </form>
+            <a class="orange-btn" href="">Send Message</a>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
