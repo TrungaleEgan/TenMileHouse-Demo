@@ -156,7 +156,7 @@ header {
 }
 
 #hero-section {
-    background-image: url('/img/hero-background-1.jpg');
+    background-image: url('img/hero-background-1.jpg');
     background-position: center center;
     background-size: cover;
     z-index: 2;
@@ -279,7 +279,7 @@ h3 {
 */
 
 #gallery-section {
-    background-image: url('/img/food-gallery.jpg');
+    background-image: url('img/food-gallery.jpg');
     background-position: center center;
     background-size: cover;
     height: 350px;
@@ -296,14 +296,14 @@ h3 {
 }
 
 #about-section .content-block {
-    background-image: url('/img/tree-background.png');
+    background-image: url('img/tree-background.png');
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 45%;
 }
 
 #buy-section .content-block {
-    background-image: url('/img/gift.png');
+    background-image: url('img/gift.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -332,7 +332,7 @@ h3 {
 }
 
 #menu-section {
-    background-image: url('/img/menu-tmh-background.jpg');
+    background-image: url('img/menu-tmh-background.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -362,7 +362,7 @@ h4 {
 }
 
 #footer-section {
-    background-image: url('/img/map-background.png');
+    background-image: url('img/map-background.png');
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
