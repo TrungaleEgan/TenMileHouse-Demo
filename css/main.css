@@ -125,6 +125,7 @@ header {
 }
 
 .menu {
+    font-size: clamp(.8rem, 1vw, 1rem);
     font-weight: bold;
     color: white;
     text-transform: uppercase;
@@ -156,7 +157,7 @@ header {
 }
 
 #hero-section {
-    background-image: url('/TenMileHouse-Demo/img/hero-background-1.jpg');
+    background-image: url('https://trungaleegan.github.io/TenMileHouse-Demo/img/hero-background-1.jpg');
     background-position: center center;
     background-size: cover;
     z-index: 2;
@@ -181,11 +182,6 @@ h2 {
     font-weight: bold;
 }
 
-.hero-contact {
-    margin-bottom: 0px;
-    padding-bottom: 4rem;
-}
-
 .hero-content {
     z-index: 2;
     position: relative;
@@ -195,6 +191,8 @@ h2 {
     margin: 0px;
     line-height: 1;
     color: white;
+    padding-bottom: 4rem;
+    text-align: center;
 }
 
 .address {
@@ -332,10 +330,11 @@ h3 {
 */
 
 #gallery-section {
-    background-image: url('/TenMileHouse-Demo/img/food-gallery.jpg');
+    background-image: url('https://trungaleegan.github.io/TenMileHouse-Demo/img/food-gallery.jpg');
     background-position: center center;
     background-size: cover;
-    height: 350px;
+    min-height: 350px;
+    height: 27vw;
     background-repeat: no-repeat;
 }
 
@@ -346,17 +345,18 @@ h3 {
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    flex-wrap: wrap;
 }
 
 #about-section .content-block {
-    background-image: url('/TenMileHouse-Demo/img/tree-background.png');
+    background-image: url('https://trungaleegan.github.io/TenMileHouse-Demo/img/tree-background.png');
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 45%;
 }
 
 #buy-section .content-block {
-    background-image: url('/TenMileHouse-Demo/img/gift.png');
+    background-image: url('https://trungaleegan.github.io/TenMileHouse-Demo/img/gift.png');
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
@@ -368,8 +368,7 @@ h3 {
 
 .content-block,
 .image-block {
-    width: 50%;
-    height: 450px;
+    width: 100%;
 }
 
 .image-block {
@@ -381,11 +380,12 @@ h3 {
 }
 
 #gift-card-placeholder {
+    width: 80%;
     max-width: 400px;
 }
 
 #menu-section {
-    background-image: url('/TenMileHouse-Demo/img/menu-tmh-background.jpg');
+    background-image: url('https://trungaleegan.github.io/TenMileHouse-Demo/img/menu-tmh-background.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -400,7 +400,7 @@ h3 {
 }
 
 h4 {
-    font-size: 2.22rem;
+    font-size: clamp(1.2rem, 3vw, 2.22rem);
 }
 
 .white {
@@ -415,11 +415,12 @@ h4 {
 }
 
 #footer-section {
-    background-image: url('/TenMileHouse-Demo/img/map-background.png');
+    background-image: url('https://trungaleegan.github.io/TenMileHouse-Demo/img/map-background.png');
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    min-height: 500px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -556,13 +557,25 @@ input {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 55em) {
     /* Style adjustments for viewports that meet the condition */
     .desktop-nav {
         display: inline-block;
     }
     .logo {
         max-width: 200px;
+    }
+    .hero-contact {
+        text-align: left;
+    }
+    .content-block,
+    .image-block {
+        width: 50%;
+        height: 450px;
+    }
+    #about-section,
+    #buy-section {
+        flex-wrap: inherit;
     }
 }
 
