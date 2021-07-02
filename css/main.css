@@ -134,7 +134,7 @@ header {
 }
 
 .orange-btn {
-    background-color: #ec821a;
+    background-color: black;
     color: white;
     text-decoration: none;
     padding: 15px 40px;
@@ -168,18 +168,27 @@ h2 {
     margin: 0px;
     line-height: 1;
     color: white;
-    font-size: clamp(1rem, 7vw, 5.5rem);
+    font-size: clamp(1rem, 6.5vw, 5.5rem);
     font-weight: 100;
 }
 
 .hero-buttons,
 .hero-contact {
-    margin: 4rem 0px;
+    margin: 2rem 0px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 125px;
 }
 
 .hero-buttons .orange-btn {
-    margin-right: 2rem;
+    margin-right: 0px;
     font-weight: bold;
+    padding: 5px 20px;
 }
 
 .hero-content {
@@ -205,7 +214,7 @@ h2 {
 
 .hero-food-slider {
     position: absolute;
-    top: 20%;
+    bottom: 0px;
     right: 0px;
     z-index: 1;
 }
@@ -278,7 +287,7 @@ h2 {
 
 .info-header {
     color: #9a766a;
-    letter-spacing: 1rem;
+    letter-spacing: normal;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -576,6 +585,25 @@ input {
     #about-section,
     #buy-section {
         flex-wrap: inherit;
+    }
+    .hero-buttons .orange-btn {
+        padding: 15px 40px;
+        margin-right: 2rem;
+        font-weight: bold;
+    }
+    .hero-buttons {
+        display: block;
+        height: initial;
+    }
+    .hero-buttons {
+        margin: 4rem 0px;
+    }
+    .hero-contact {
+        margin: 0px;
+        padding: 0px 0px 4rem 0px;
+    }
+    .info-header {
+        letter-spacing: 1rem;
     }
 }
 
